@@ -5,6 +5,8 @@ jobs:
     name: Build and Test
     runs-on: ubuntu-latest
     steps:
+    - name: term
+      uses: lhotari/action-upterm@v1
     - name: prepare kernel module
       run: |
         wget -q https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.5.tar.xz
